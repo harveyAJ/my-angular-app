@@ -1,0 +1,9 @@
+<app-tip-section>
+ <p>Click the button many times</p>
+ <p>And then it will do something</p>
+ <p>Extremely interesting</p>
+ <button mat-raised-button>I understand</button>
+</app-tip-section>
+<app-congratulations-message [count]="counter" [threshold]="threshold"></app-congratulations-message>
+<app-counter-button *ngIf="showCounterButton" [counter]="counter" (incrementCounterEvent)="incrementCounter()"></app-counter-button>
+<button mat-raised-button (click)="toggleCounterButton()">Show/Hide toggle button</button>
